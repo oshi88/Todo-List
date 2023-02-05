@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/50bdfe43e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h1> &nbsp&nbspTodo List</h1>
+        </div>
+        <button class="open-nav-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div class="main">
+        <div class="nav">
+            <div class="inbox" id="inbox-tab">
+                <i class="fa-solid fa-inbox"></i>
+                <h2>&nbspInbox</h2>
+            </div>
+            <div class="today" id="today-tab">
+                <i class="fa-solid fa-calendar-day"></i>
+                <h2>&nbspToday</h2>
+            </div>
+            <div class="week" id="week-tab">
+                <i class="fa-solid fa-calendar-week"></i>
+                <h2>&nbspThis week</h2>
+            </div>
+        </div>
+        <div class="preview" id="preview-panel">
+            <div id="dayCategoryName"><div>Inbox</div></div>
+            <div class="taskList" id="taskList"></div>
+            
+        </div>
+        <div class="newTaskSection">
+            <input type="text" id="title"><br>
+            <input type="text" id="dueDate"><br>
+            <input type="checkbox" name="priority" id="setPriority"><br>
+            <input type="button" value="Add Task" id="submitBtn">
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="main.js"></script>
+</body>
+</html>
