@@ -1,8 +1,8 @@
 
 class newTask{
-    constructor(title,dueDate,priority){
+    constructor(title,Date,priority){
         this.title = title;
-        this.dueDate = dueDate;
+        this.date = Date;
         this.priority = priority;
     }
 }
@@ -18,8 +18,6 @@ class todo{
     static getTask(){
         return todo.allTasks;
     }
-
-    
 }
 
 export {

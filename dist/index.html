@@ -40,13 +40,29 @@
             <div id="dayCategoryName"><div>Inbox</div></div>
             <div class="taskList" id="taskList"></div>
             
+            <button class="newTask-popup-Btn" id="addTask-btn">
+                <i class="fa-solid fa-plus"></i>
+                <h2>Add Task</h2>
+            </button>
+
+            <div class="newTaskSection" id="newTask-popUp-window">
+                <div class="new-task-detail-popup">
+                    <div class="title-date">
+                        <input type="text" id="task-title">
+                        <input type="date" id="date-picker" name="date-Picker">
+                    </div>
+                    <div class="priority">
+                        <p>Importance</p>
+                        <input type="checkbox" name="priority" id="checkbox-Priority" value="Done">
+                    </div> 
+                </div>
+                <div class="newTask-buttons">
+                    <input type="button" value="Add" id="newTask-submitBtn">
+                    <input type="button" value="Cancel" id="newTask-cancelBtn">
+                </div>
+            </div>
         </div>
-        <div class="newTaskSection">
-            <input type="text" id="title"><br>
-            <input type="text" id="dueDate"><br>
-            <input type="checkbox" name="priority" id="setPriority"><br>
-            <input type="button" value="Add Task" id="submitBtn">
-        </div>
+        
     </div>
     <div class="footer"></div>
     <script src="main.js"></script>
