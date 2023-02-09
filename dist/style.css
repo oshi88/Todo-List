@@ -69,7 +69,7 @@ h2{
 .preview{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     height: 100%;
     background-color: rgb(20, 20, 20);
     z-index: 0;
@@ -118,13 +118,99 @@ h2{
     background-color: rgb(32, 32, 32);
     border: 1px solid rgb(54, 54, 54) ;
 }
-
-.newTaskSection{
-    width: 20%;
-    padding: 20px;
+.task_Name_checkBtn{
+    display: flex;
+}
+.task_Name_checkBtn>div{
+    margin-left: 10px;
 }
 
+.newTask-popup-Btn{
+    width: 20%;
+    display: flex;      /*--active--*/
+    align-items: center;
+    color: rgb(197, 197, 197);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-left: 60px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.newTask-popup-Btn:hover{
+    color: white;
+}
+.fa-plus{
+    font-family: roboto;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.off{
+    display: none;
+}
+.newTaskSection{
+    display: none;      /*--active--*/
+    flex-direction: column;
+    margin-left: 50px;
+    padding-left: 10px;
+    width: 80%;
+}
+.active{
+    display: flex;
+}
+.new-task-detail-popup{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.title-date{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
 
+#task-title{
+    width: 50%;
+    border: none;
+}
+#date-picker{
+    width: 18%;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: none;
+    border-right: 1px solid grey;
+}
+.priority{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    font-weight:500;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+#checkbox-Priority{
+    margin-left: 5px;
+}
+.newTask-buttons{
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+}
+.newTask-buttons>*{
+    width: 50%;
+    height: 30px;
+    border: none;
+    margin: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#newTask-submitBtn{
+    background-color: rgb(89, 197, 98);
+}
+#newTask-cancelBtn{
+    background-color: rgb(197, 89, 89);
+}
 .footer{
     background-color: black;
     height: 3vh;
