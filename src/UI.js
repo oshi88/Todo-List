@@ -10,7 +10,15 @@ export default class UI{
     static navMenu(){
         const inboxBtn = document.getElementById('inbox-tab');
         const todayBtn = document.getElementById('today-tab');                
-        const weekBtn  = document.getElementById('week-tab');   
+        const weekBtn  = document.getElementById('week-tab');  
+        const navMenuOpen = document.querySelector('.fa-bars');
+        const menu = document.querySelector('.nav');
+
+        navMenuOpen.addEventListener('click',()=>{
+            navMenuBtn.classList.toggle('fa-bars');
+            navMenuBtn.classList.toggle('fa-xmark');
+            menu.classList.toggle('active');
+        })
         inboxBtn.addEventListener('click',()=>{
             UI.inbox();
             console.log('Inbox Btn');
